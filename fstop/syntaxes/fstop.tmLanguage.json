@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "F-Stop",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.fstop",
+				"match": "\\b(?i)(OPEN|SOLARIZE|POSTERIZE)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.fstop",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.fstop",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.ft"
+}

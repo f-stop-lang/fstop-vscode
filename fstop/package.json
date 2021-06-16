@@ -1,0 +1,25 @@
+{
+    "name": "fstop",
+    "displayName": "fstop",
+    "description": "Syntax highlighting for the fstop language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fstop",
+            "aliases": ["F-Stop", "fstop"],
+            "extensions": [".ft"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fstop",
+            "scopeName": "source.ft",
+            "path": "./syntaxes/fstop.tmLanguage.json"
+        }]
+    }
+}
