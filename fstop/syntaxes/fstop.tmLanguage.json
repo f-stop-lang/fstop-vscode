@@ -7,13 +7,18 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"name": "string.quoted.single.fstop",
+			"begin": "'",
+			"end": "'"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.fstop",
-				"match": "\\b(?i)(OPEN|SOLARIZE|POSTERIZE)\\b"
+				"match": "\\b(?i)(OPEN|SOLARIZE|POSTERIZE|AS)\\b"
 			}]
 		},
 		"strings": {
