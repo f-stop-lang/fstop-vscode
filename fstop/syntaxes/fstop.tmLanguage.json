@@ -12,6 +12,10 @@
 			"name": "string.quoted.single.fstop",
 			"begin": "'",
 			"end": "'"
+		},
+		{
+			"name": "comment.line.fstop",
+			"match": "//[^\n]*"
 		}
 	],
 	"repository": {
